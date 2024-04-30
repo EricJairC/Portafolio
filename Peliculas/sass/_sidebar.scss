@@ -64,4 +64,18 @@
 		align-items: center;
 		justify-content: center;
 	}
+
+	@media screen and (max-width: 650px){
+		&__generos {
+			margin-bottom: 20px;
+		}
+		&__contenedor-generos {
+			display: flex;
+			overflow-x: auto;
+		}
+		&__contenedor-generos::-webkit-scrollbar{
+			width: 0;
+		}
+	}
+
 }
