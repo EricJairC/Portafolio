@@ -14,9 +14,6 @@ const cargar = async() =>{
     const resultados = await fetchPopulares();
     cargarTitulos(resultados);
     cargarGeneros('movie');
-    //Aqui va quitar el display
-    const contenedorBotones = document.querySelector('.main__paginacion');
-    contenedorBotones.setAttribute('style', 'display: none');
 };
 
 cargar();

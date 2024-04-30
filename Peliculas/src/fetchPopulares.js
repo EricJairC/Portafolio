@@ -3,6 +3,9 @@ import obtenerGenero from "./obtenerGenero";
 
 //Función para cargar las películas populares
 const fetchPopulares = async(filtro = 'movie') =>{
+    //Aqui va quitar el display
+    const contenedorBotones = document.querySelector('.main__paginacion');
+    contenedorBotones.setAttribute('style', 'display: none');
     //Operador ternario
     const tipo = filtro === 'movie' ? 'movie' : 'tv';
     //Realizando peticion

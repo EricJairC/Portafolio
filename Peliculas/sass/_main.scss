@@ -9,6 +9,7 @@
 
 	&__filtros {
 		display: flex;
+		justify-content: space-between;
 		gap: 10px;
 	}
 
@@ -43,7 +44,11 @@
 
 	&__paginacion {
 		display: flex;
-		justify-content: center;
+		justify-content: end;
+		gap: 20px;
+	}
+	&__filtros-botones{
+		display: flex;
 		gap: 20px;
 	}
 }

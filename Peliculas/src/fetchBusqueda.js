@@ -7,7 +7,7 @@ const fetchBusqueda = async(pagina = 1) =>{
     //Buscamos el contenedor de generos y buscamos la clase btn active y en el data set extraemos el id
     const idGenero = document.querySelector('.sidebar__contenedor-generos .btn--active')?.dataset.id;
     //Extraemos el valor de daño inicial y en caso de que no haya nada por defecto pon 1950
-    const anoInicial = document.getElementById('años-min').value || 1950;
+    const anoInicial = document.getElementById('años-min').value || 2024;
 
     //Aqui va quitar el display
     const contenedorBotones = document.querySelector('.main__paginacion');
