@@ -748,14 +748,14 @@ nav{
     }
     [class^="contenedor-tarjetas"] > .link > .contenedor-informacion{
         width: 100%;
-        height: 40%;
+        height: 34%;
         padding-bottom: 0em;
         flex-flow: column;
     }
         
     [class^="contenedor-tarjetas"] > .link > .contenedor-estrella{
         width: 100%;
-        height: 50px;
+        height: 70px;
         align-items: center;
         flex-direction: row;
     }
