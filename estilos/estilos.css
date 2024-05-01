@@ -60,6 +60,7 @@ a{
 
 .contenedor-personal .contenedor-informacion{
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -253,6 +254,12 @@ footer{
     .texto-contactame{
         padding-bottom: 25px;
     }
+    .contenedor-informacion{
+        height: 180px;
+    }
+    .Nombre, .contenedor-nav > ul > li{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -275,7 +282,7 @@ footer{
         justify-content: start;
     }
     .contenedor-nav ul li, .Nombre{
-        font-size: 15px;
+        font-size: 17px;
     }
     .text-profesion, .texto-trabajos, .texto-personal, .texto-contactame, .descripcion, .texto{
         font-size: 17px;
@@ -290,17 +297,25 @@ footer{
     .texto-trabajos{
         padding-bottom: 30px;
     }
+    .iconos {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 550px) {
+    .text-profesion, .texto-nombre, .descripcion {
+        padding-bottom: 10px;
+    }
     .contenedor-menu{
+        width: 98%;
         flex-direction: column;
+        align-items: start;
     }
     ul > li{
         padding-right: 5px;
     }
     .contenedor-nav ul li{
-        font-size: 13px;
+        font-size: 15px;
     }
     .contenedor-principal-header {
         width: 100%;
@@ -317,7 +332,7 @@ footer{
         padding-top: 10px;
     } */
     .contenedor-section{
-        height: 150px;
+        height: 200px;
         margin-bottom: 10px;
         
     }
