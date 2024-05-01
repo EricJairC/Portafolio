@@ -347,12 +347,12 @@ nav{
     width: 90%;
     height: 90%;
     max-width: 550px;
-    /* overflow-y: auto; */
+    overflow-y: auto;
 }
 
-/* .contenedor-carrito::-webkit-scrollbar{
+.contenedor-carrito::-webkit-scrollbar{
     width: 0;
-} */
+}
 
 .carrito-header{
     padding: 20px;
@@ -376,17 +376,11 @@ nav{
 }
 
 .carrito-body{
-    height: 78%;
     background: #fff;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    overflow-y: auto;
-}
-
-.carrito-body::-webkit-scrollbar{
-    width: 0;
 }
 
 .carrito-sin-producto{
@@ -755,9 +749,6 @@ nav{
     .icono-carrito{
         font-size: 20px;
         height: auto;
-    }
-    .contenedor-carrito{
-        height: 73%;
     }
 }
 @media screen and (max-width: 1150px) and (max-height: 850px){
