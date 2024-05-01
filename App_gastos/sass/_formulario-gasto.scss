@@ -102,15 +102,18 @@
 @media screen and (max-height: 850px) {
 	.formulario-gasto__form{
 		height: 90%;
-		gap: 10px;
-		justify-content: space-between;
+		gap: 20px;
+		
 	}
 	.formulario-gasto__titulo {
 		margin-bottom: 15px;
 		font-size: 15px;
 	}
-	.formulario-gasto__input, .formulario-gasto__btn{
-		height: 45px;
+	.formulario-gasto__btn{
+		height: 10vh;
+	}
+	.formulario-gasto__input{
+		height: 10vh;
 	}
 	.total-gastado{
 		padding: 10px 0
