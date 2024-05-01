@@ -14,7 +14,7 @@ const cargarGastos = () => {
 	//Convertimos el objeto en una cadena de texto digerible para js
 	const gastos = JSON.parse(window.localStorage.getItem("gastos"));
 	//En caso de que haya gastos y haya más de uno
-	if (gastos && gastos.length > 0) {
+	if (gastos && gastos.length >= 0) {
 		//Filtramos los gastos y creamos un nuevo arreglo con filter
 		const gastosDelMes = gastos.filter((gasto) => {
 			if (isThisMonth(parseISO(gasto.fecha))) {
