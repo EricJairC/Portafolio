@@ -111,3 +111,22 @@
 		font-size: 0.9em;
 	}
 }
+
+@media screen and (max-height: 850px) {
+	.media__contenedor{
+		height: auto;
+		padding: 20px;
+	}
+	.media__poster{
+		max-width: 200px;
+	}
+}
+
+@media screen and (max-height: 850px) and (max-width: 650px) {
+	.media__contenedor{
+		height: 70%;
+	}
+	.media__poster{
+		max-width: 100px;
+	}
+}
