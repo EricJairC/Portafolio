@@ -289,7 +289,7 @@ const renderCarrito = () => {
             <div class="carrito-producto-info">
                 <img class="imagen-carrito" src="img/${productoEnCarrito.img}" alt="">
                 <div class="contenedor-informacion-prodcuto">
-                    <p class="nombre-producto"><span class="carrito-producto-cantidad">${productoEnCarrito.cantidad} x</span> ${productoEnCarrito.nombre}</p>
+                    <p class="nombre-producto-carrito"><span class="carrito-producto-cantidad">${productoEnCarrito.cantidad} x</span> ${productoEnCarrito.nombre}</p>
                     <p class="codigo-producto">Código de producto: ${productoEnCarrito.id*13}</p>
                 </div>
             </div>
