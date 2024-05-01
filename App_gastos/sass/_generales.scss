@@ -28,3 +28,9 @@ body {
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 }
+
+@media screen and (max-height: 850px){
+	.contenedor{
+		height: 90vh;
+	}
+}

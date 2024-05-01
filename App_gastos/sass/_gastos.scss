@@ -7,6 +7,7 @@
 	height: 100%;
 	position: relative;
 	z-index: 10;
+	
 
 	&__titulo {
 		font-weight: 700;
@@ -33,12 +34,16 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 20px;
-		max-height: 60vh;
+		max-height: 50vh;
 		overflow: auto;
 		align-content: flex-start;
+		overflow-y: auto;
 	}
 }
 
+.gastos__lista::-webkit-scrollbar{
+	width: 0;
+}
 .gasto {
 	display: flex;
 	gap: 20px;

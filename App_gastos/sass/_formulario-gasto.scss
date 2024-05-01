@@ -10,6 +10,7 @@
 	border-radius: 25px 25px 0 0;
 	transition: 0.3s ease-in-out all;
 	transform: translateY(5%);
+	overflow-y: auto;
 
 	&--active {
 		transform: translateY(-100%);
@@ -92,4 +93,8 @@
 			background: variables.$color-primario-hover;
 		}
 	}
+}
+
+.formulario-gasto::-webkit-scrollbar{
+	width: 0;
 }
