@@ -33,4 +33,8 @@ body {
 	.contenedor{
 		height: 90vh;
 	}
+	.contenedor > header, .contenedor > footer{
+		height: 70px;
+	}
+	
 }
