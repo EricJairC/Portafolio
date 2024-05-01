@@ -391,6 +391,11 @@ nav{
     display: block;
 }
 
+.carrito-sin-producto--active{
+    text-align: center;
+    display: block;
+}
+
 .carrito-producto{
     display: flex;
     justify-content: space-between;
@@ -450,6 +455,11 @@ nav{
 .carrito-contenedor-total{
     display: flex;
     justify-content: space-between;
+    
+}
+
+.carrito-contenedor-total--active{
+    display: none;
 }
 
 .texto-total{
@@ -472,8 +482,12 @@ nav{
 }
 
 .carrito-contenedor-regresar{
-    justify-content: center;
     display: none;
+}
+
+.carrito-contenedor-regresar--active{
+    display: flex;
+    justify-content: center;
 }
 
 .carrito-btn-regresar{
