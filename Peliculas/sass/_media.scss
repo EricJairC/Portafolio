@@ -19,6 +19,7 @@
 		background: variables.$color-fondo;
 		width: 90%;
 		max-width: 1000px;
+		height: 48%;
 		padding: 40px;
 		border-radius: 10px;
 		overflow: hidden;
@@ -85,5 +86,28 @@
 
 	&__poster {
 		max-width: 250px;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.media__contenedor{
+		flex-direction: column;
+	}
+	.media__imagen{
+		display: flex;
+		justify-content: center;
+	}
+
+	.media__poster{
+		max-width: 30%;
+	}
+	.media__titulo{
+		font-size: 1em;
+	}
+	.media__fecha{
+		margin-bottom: 0px;
+	}
+	.media__overview{
+		font-size: 0.9em;
 	}
 }
