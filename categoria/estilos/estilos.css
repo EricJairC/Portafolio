@@ -709,9 +709,7 @@ nav{
     }
 }
 @media screen and (max-width: 450px){
-    .descripcion-producto{
-        height: 80px;
-    }
+    
     .icono{
         font-size: 15px;
     }
