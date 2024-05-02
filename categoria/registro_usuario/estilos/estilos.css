@@ -183,15 +183,16 @@ a:active{
         margin: 15px;
     }
     .contenedor-login{
-        width: 90%;
+        width: 95%;
     }
     .contenedor-login-principal{
-        width: 90%;
+        width: 100%;
         height: 50%;
         border-radius: 10px;
     }
     form{
         margin: 0% 5% 0% 5%;
+        gap: 10px;
     }
     .contenedor-login-imagen{
         display: none;
@@ -200,15 +201,8 @@ a:active{
         margin: 0;
         width: 95%;
     }
-
 }
 @media screen and (max-width: 450px) {
-    .contenedor-login{
-        width: 95%;
-    }
-    .contenedor-login-principal{
-        width: 100%;
-    }
     .contenedor-login-principal > h1{
         font-size: 20px;
         margin-bottom: 20px;
@@ -216,11 +210,7 @@ a:active{
     .boton{
         font-size: 20px;    
     }
-    form{
-        gap: 10px;
-    }
 }
-
 @media screen and (max-height: 800px){  
     .contenedor-login{
         width: 60%;
