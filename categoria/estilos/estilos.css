@@ -795,3 +795,15 @@ nav{
         max-height: 60vh;
     }
 }
+
+@media screen and (max-height: 550px){
+    .carrito-body{
+        max-height: 55vh;
+    }
+}
+
+@media screen and (max-height: 450px){
+    .carrito-body{
+        max-height: 50vh;
+    }
+}
