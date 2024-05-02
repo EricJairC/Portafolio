@@ -81,3 +81,15 @@
 		}
 	}
 }
+@media screen and (max-height: 850px) {
+	.sidebar__logo{
+		margin: 20px auto;
+		width: 20%;
+	}
+	.sidebar__generos{
+		margin-bottom: 15px;
+	}
+	.sidebar__años {
+		margin-bottom: 15px;
+	}
+}
