@@ -716,11 +716,8 @@ nav{
         height: auto;
     }
     .nombre-producto{
-        height: 18px;
+        height: 30px;
         overflow: hidden;
-    }
-    .descripcion-producto{
-        height: 94px;
     }
     .contenedor-categoria, .contenedor-producto{
         margin-bottom: 0px;
@@ -728,6 +725,12 @@ nav{
     }
 }
 @media screen and (max-height: 850px){
+    .nombre-producto{
+        height: 47px;
+    }
+    .descripcion-producto{
+        height: 70px;
+    }
     .contenedor-titulo > span{
         font-size: 30px;
     }
