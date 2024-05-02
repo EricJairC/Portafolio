@@ -716,8 +716,11 @@ nav{
         height: auto;
     }
     .nombre-producto{
-        height: 30px;
+        height: 18px;
         overflow: hidden;
+    }
+    .descripcion-producto{
+        height: 94px;
     }
     .contenedor-categoria, .contenedor-producto{
         margin-bottom: 0px;
