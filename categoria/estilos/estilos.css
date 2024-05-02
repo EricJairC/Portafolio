@@ -792,7 +792,6 @@ nav{
 
 @media screen and (max-height: 650px){
     .carrito-body{
-        max-height: 50vh;
+        max-height: 60vh;
     }
 }
-
