@@ -181,8 +181,8 @@ h1{
 }
 
 .contenedor-img img{
-    width: 230px;
-    height: 230px;
+    width: 210px;
+    height: 210px;
 }
 
 /*Contacto*/
@@ -334,7 +334,6 @@ footer{
     .contenedor-section{
         height: 200px;
         margin-bottom: 10px;
-        
     }
 
     .texto-trabajos, .texto-personal, .texto-contactame{
