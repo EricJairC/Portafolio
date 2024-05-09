@@ -731,6 +731,9 @@ nav{
         box-shadow: 5px 5px 5px #0006;
         transform: translateY(0%);
     }
+    .notificacion-titulo, .notificacion-link{
+        font-size: 13px;
+    }
 }
 @media screen and (max-width: 450px){
     .icono{
