@@ -614,6 +614,13 @@ nav{
         height: auto;
         align-items: end;
     }
+    .contenedor-notificacion{
+        left: -200px;
+        right: auto;
+    }
+    .contenedor-notificacion-active{
+        left: 40px;
+    }
 
 }
 @media screen and (max-width: 800px){
