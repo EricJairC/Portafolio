@@ -721,6 +721,16 @@ nav{
     .contenedor-nav{
         height: 70px;
     }
+    .contenedor-notificacion{
+        padding: 10px;
+    }
+    .imagen-notificacion{
+        width: 80px;
+    }
+    [class^="contenedor-tarjetas"]:hover{
+        box-shadow: 5px 5px 5px #0006;
+        transform: translateY(0%);
+    }
 }
 @media screen and (max-width: 450px){
     .icono{
