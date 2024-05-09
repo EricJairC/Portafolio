@@ -709,7 +709,7 @@ nav{
 }
 
     [class^="contenedor-tarjetas"] > .link > .contenedor-estrella > .icono-carrito{
-        height: 100%;
+        
         align-items: end;
     }
 }
@@ -794,7 +794,7 @@ nav{
         font-size: 20px;
     }
     .icono-carrito{
-        font-size: 20px;
+        font-size: 28px;
         height: auto;
     }
 }
