@@ -182,14 +182,14 @@ const fetchBusqueda = async(pagina = 1) =>{
     //Accedemos a la sección de filtros y buscamos el boton con la clase activa, si esto se cumple entonces extraemos el id
     const tipo = document.querySelector('.main__filtros .btn--active')?.id;
     //Buscamos el contenedor de generos y buscamos la clase btn active y en el data set extraemos el id
-    const idGenero = document.querySelector('.sidebar__contenedor-generos .btn--active')?.dataset.id;
+    const idGenero = document.querySelector('.sidebar__contenedor-generos .btn--active')?.dataset.id || 12;
     //Extraemos el valor de daño inicial y en caso de que no haya nada por defecto pon 1950
     const anoInicial = document.getElementById('años-min').value || 2024;
 
     //Aqui va quitar el display
     const contenedorBotones = document.querySelector('.main__paginacion');
     contenedorBotones.setAttribute('style', 'display: flex');
-
+    
     let url;
     //Establecemos las url
     if(tipo === 'movie'){

@@ -11,6 +11,7 @@
 		display: flex;
 		justify-content: space-between;
 		gap: 10px;
+		// position: relative;
 	}
 
 	&__titulo {
@@ -98,6 +99,16 @@
 @media screen and (max-width: 700px){
 	.main{
 		padding: 40px 40px;
+	}
+}
+
+@media screen and (max-height: 850px) {
+	.main__filtros{
+		height: 54px;
+		align-items: center;
+	}
+	.main__filtros-botones, .main__paginacion{
+		height: 35px;
 	}
 }
 

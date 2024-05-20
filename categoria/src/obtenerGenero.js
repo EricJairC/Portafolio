@@ -14,7 +14,6 @@ const consulta = contenedorCategorias.addEventListener('click', (e) => {
     categoriaSeleccionada = e.target.dataset.categoria;
     //retorna el valor de la categoria
     return categoriaSeleccionada;
-    
 })
 
 export default consulta;
