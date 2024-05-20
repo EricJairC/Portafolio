@@ -85,31 +85,15 @@
 		}
 	}
 }
-@media screen and (max-height: 850px) {
+@media screen and (max-height: 850px) and (min-width: 650px) {
 	.sidebar__logo{
-		// margin: 10px auto;
-		// width: 20%;
-		display: none;
+		margin: 10px auto;
+		width: 20%;
 	}
-	.sidebar__generos{
+	.sidebar__generos {
 		margin-bottom: 15px;
-		margin-top: 15px;
 	}
 	.sidebar__años {
 		margin-bottom: 15px;
-	}
-	.sidebar__titulo{
-		font-size: 15px;
-		margin-bottom: 10px;
-	}
-	.sidebar__input{
-		height: 30px;
-	}
-	.sidebar__logo--active {
-		display:flex;
-		// position: absolute;
-		left: 47%;
-		width: 90%;
-		max-width: 50px;
 	}
 }
