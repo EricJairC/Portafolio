@@ -1,0 +1,143 @@
+@use 'variables';
+
+.media {
+	background: rgba(0, 0, 0, 0.8);
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+
+	&--active {
+		display: flex;
+	}
+
+	&__contenedor {
+		background: variables.$color-fondo;
+		width: 90%;
+		max-width: 1000px;
+		height: 48%;
+		padding: 40px;
+		border-radius: 10px;
+		overflow: hidden;
+		display: flex;
+		gap: 20px;
+		position: relative;
+	}
+
+	&__btn {
+		background: none;
+		cursor: pointer;
+		border: none;
+		color: #fff;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		width: 30px;
+		height: 30px;
+	}
+
+	&__btn-icono {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__backdrop {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		background: #000;
+	}
+
+	&__backdrop-image {
+		width: 100%;
+		height: 100%;
+		opacity: 0.1;
+		vertical-align: top;
+	}
+
+	&__imagen {
+		position: relative;
+		z-index: 1;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		position: relative;
+		z-index: 1;
+		overflow-y: auto;
+	}
+	&__info::-webkit-scrollbar {
+		width: 0;
+	}
+
+	&__fecha {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+
+	&__overview {
+		line-height: 28px;
+	}
+
+	&__poster {
+		max-width: 250px;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.media__contenedor{
+		flex-direction: column;
+	}
+	.media__imagen{
+		display: flex;
+		justify-content: center;
+	}
+
+	.media__poster{
+		max-width: 30%;
+	}
+	.media__titulo{
+		font-size: 1em;
+	}
+	.media__fecha{
+		margin-bottom: 0px;
+	}
+	.media__overview{
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (max-height: 850px) {
+	
+	.media__contenedor{
+		height: auto;
+		padding: 20px;
+	}
+	.media__poster{
+		max-width: 200px;
+	}
+	.media__info{
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-height: 850px) and (max-width: 650px) {
+	.media__contenedor{
+		height: 70%;
+	}
+	.media__poster{
+		max-width: 100px;
+	}
+	.media__imagen{
+		margin-top: 30px;
+	}
+}
