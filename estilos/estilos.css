@@ -8,7 +8,7 @@
     --secondary: #2563eb;
     --white: #fff;
     --text: #646464;
-    --bg-img: #bebebe;
+    --bg-img: #e4e4e4;
 }
 
 *{
@@ -115,13 +115,12 @@ body{
 }
 
 .proyecto-1, .proyecto-2, .proyecto-3, .proyecto-4{
-    padding: 0.8rem;
+    padding: 0.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--bg-img);
     border-radius: 0.5rem;
-    
     position: relative;
 }
 
@@ -158,10 +157,23 @@ body{
 }
 
 .img-logo{
-    width: clamp(8rem, 10vw, 15rem);
+    width: 100%;
     background-color: var(--white);
     border-radius: 100%;
     object-fit: cover;
+    
+}
+
+.link-card{
+    overflow: hidden;
+}
+
+.link-card img{
+    transition: all 300ms ease;
+}
+
+.link-card img:hover{
+    transform: scale(1.10);
 }
 
 
