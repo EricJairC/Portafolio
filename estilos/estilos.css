@@ -1,353 +1,258 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@font-face {
+    font-family: 'Forta';
+    src: url(../fonts/Forta.ttf);
+}
+
+:root{
+    --primary: #F5EFD7;
+    --secondary: #2563eb;
+    --white: #fff;
+    --text: #646464;
+    --bg-img: #bebebe;
+}
 
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    background-color: #eaeaea;
 }
 
-.contenedor-principal-header{
+body{
+    font-family: 'Forta', sans-serif;
+    background-color: var(--primary);
+}
+
+/* Contenedor presentacion */
+.contenedor-presentacion{
     width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
-}
-
-.contenedor-menu{
-    width: 90%;
-    height: 10%;
-    display: flex;
-    padding-top: 20px;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-.contenedor-nav ul li, .Nombre{
-    display: block;
-    float: left;
-    margin-top: 10px;
-    font-size: 23px;
-    font-weight: 550;
-}
-
-ul > li{
-    padding-left: 20px;
-}
-
-a{
-    text-decoration: none;
-    color: #111111;
-}
-
-.contenedor-main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contenedor-section{
-    width: 90%;
-    height: 400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-}
-
-.contenedor-personal .contenedor-informacion{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.contenedor-informacion{
-    height: 230px;
-}
-
-.descripcion-personal{
-    width: 50%;
-    height: 100%;
-}
-
-.text-profesion{
-    font-size: 35px;
-    font-weight: 500;
-}
-
-h1{
-    font-size: 70px;
-    font-weight: 800;
-}
-
-.descripcion{
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.iconos{
-    font-size: 38px;
-    padding-right: 20px;
-    cursor: pointer;
-}
-
-/*Contenedor proyectos*/
-.contenedor-trabajos{
-    width: 90%;
-    height: 550px;
-    display: flex;
-    flex-direction: column; 
-}
-
-.texto-trabajos, .texto-personal{
-    width: 100%;
-    font-size: 45px;
-    font-weight: 800;
-    padding-bottom: 75px;
-}
-
-.contenedor-principal-tarjetas{
-    max-width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1rem;
-    /* flex-wrap: wrap; */
-}
-
-.contenedor-tarjetas{
-    width: 33%;
-    max-width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: normal;
-    align-items: center;
-    padding: 9px;
-    border-radius: 10px;
-}
-
-.imagen-tarjeta{
-    width: 100%;
-    overflow: hidden;
-    transition: all 500ms ease;
-}
-
-.imagen-tarjeta img{
-    border-radius: 10px;
-    width: 100%;
-    transition: all 300ms ease;
-}
-
-.imagen-tarjeta img:hover{
-    transform: scale(1.15);
-}
-
-
-.descripcion-proyecto, .titulo-descripcion-proyecto, .imagen-tarjeta, .contenedor-tarjetas, .link-proyecto{
-    background-color: rgb(228, 225, 225);
-}
-
-
-
-/*Sobre mi*/
-.contenedor-personal{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+.contedor-texto{
+    position: absolute;
 }
 
 .texto{
-    width: 100%;
-    font-size: 20px;
-    font-weight: 500;
-    
+    color: var(--secondary);
+    font-size: clamp(8rem, 15vw, 15rem);
+    text-align: center;
 }
 
 .contenedor-img{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.img-zoro{
+    width: clamp(8rem, 15vw, 15rem);
+    background-color: var(--white);
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.contenedor-descripcion{
+    width: 100%;
+    position: absolute;
+    top: 90%;
+}
+
+.separador{
+    text-align: center;
+    position: relative;
+    font-size: clamp(2.5rem, 3.5vw, 3em);
+    color: var(--secondary);
+}
+
+.descripcion{
+    width: 120%;
+    position: absolute;
+    text-align: center;
+    left: -10%;
+    font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+    color: var(--text);
+}
+
+/* Sección proyectos */
+.contenedor-proyectos, .contenedor-tecnologias{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.contenedor-primer-seccion{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenedor-titulo-proyectos{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo{
+    color: var(--secondary);
+    font-size: clamp(3rem, 10vw, 15rem);
+}
+
+.contenedor-primario-proyectos{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+
+.proyecto-1, .proyecto-2, .proyecto-3, .proyecto-4{
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-img);
+    border-radius: 0.5rem;
+    
+    position: relative;
+}
+
+.proyecto-1, .proyecto-2{
     width: 50%;
+    height: auto;
+}
+
+.proyecto-3, .proyecto-4{
+    width: 90%;
+}
+
+.proyecto-3{
+    margin-bottom: 2rem;
+}
+
+.cards{
+    min-height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+.contenedor-segunda-seccion{
+    width: 35%;
+}
+
+.contenedor-secundario-proyectos{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.img-logo{
+    width: clamp(8rem, 10vw, 15rem);
+    background-color: var(--white);
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+
+.link-card{
+    display: inline-block;
+    line-height: 0; /* Elimina el espacio extra */
+}
+
+.contenedor-principal-tecnologias{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contenedor-uso{
+    width: 100%;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 40px;
+    padding: 20px;
+    justify-items: center;
+    place-items: center;
+}
+
+.icono{
+    font-size: 40px;
+    transition: all 0.2s ease-in-out;
+}
+
+.titulo-tecnologias{
+    text-align: center;
+    color: var(--secondary);
+    font-size: clamp(3rem, 10vw, 5rem);
+}
+
+.contenedor-icono{
+    width: 72px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.contenedor-icono:hover > .icono{
+    color: var(--secondary);
+}
+
+.fi-brands-typescript {
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contenedor-img img{
-    width: 210px;
-    height: 210px;
-}
-
-/*Contacto*/
-footer{
-    width: 100%;
-    margin: 75px 0px 75px 0px;
-    display: flex;
-    justify-content: center;
-}
-
-.contenedor-contacto{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-}
-
-.contenedor-iconos-footer{
-    display: flex;
-    flex-direction: column;
-}
-
-.texto-contactame{
-    width: 100%;
-    font-size: 45px;
-    font-weight: 800;
-    padding-bottom: 75px;
-}
-
-@media screen and (max-width: 900px){
-    .contenedor-section {
-        height: 300px;
-    }
-    h1{
-        font-size: 40px;
-        font-weight: 800;
-    }
-    .texto-trabajos{
-        padding-bottom: 40px;
-    }
-    .contenedor-trabajos{
+@media screen and (max-width: 1100px){
+    .contenedor-proyectos{
         height: auto;
-        margin-bottom: 30px;
-    }
-    .contenedor-principal-tarjetas{
         flex-direction: column;
-        margin-bottom: 20px;
     }
-    .contenedor-tarjetas{
-        width: 100%;
-    }
-    .contenedor-descripcion-proyecto{
-        width: 100%;
-        background-color: rgb(228, 225, 225);
-        padding: 10px;
-    }
-    .text-profesion, .texto-trabajos, .texto-personal, .texto-contactame{
-        font-size: 23px;
-    }
-    .texto-personal{
-        padding-bottom: 30px;
-    }
-    .descripcion{
-        font-size: 18px;
-    }
-    .texto{
-        width: 100%;
-        font-size: 18px;
-    }
-    .texto-contactame{
-        padding-bottom: 25px;
-    }
-    .contenedor-informacion{
-        height: 180px;
-    }
-    .Nombre, .contenedor-nav > ul > li{
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .contenedor-img{
-        display: none;
-    }
-    .descripcion-personal{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    h1{
-        font-size: 25px;
-        font-weight: 800;
-    }
-    .contenedor-section{
-        height: 200px;
-        margin-top: 25px;
-        justify-content: start;
-    }
-    .contenedor-nav ul li, .Nombre{
-        font-size: 17px;
-    }
-    .text-profesion, .texto-trabajos, .texto-personal, .texto-contactame, .descripcion, .texto{
-        font-size: 17px;
-    }
-    .texto{
+    .contenedor-primer-seccion{
         width: 100%;
         
     }
-    footer{
-        margin-top: 30px;
+    .contenedor-segunda-seccion{
+        width: 100%;
     }
-    .texto-trabajos{
-        padding-bottom: 30px;
+    .contenedor-secundario-proyectos{
+        flex-direction: row;
     }
-    .iconos {
-        font-size: 30px;
+    .proyecto-3{
+        margin-bottom: 0;
+    }
+    .contenedor-primer-seccion{
+        gap: 3rem;
     }
 }
 
-@media screen and (max-width: 550px) {
-    .text-profesion, .texto-nombre, .descripcion {
-        padding-bottom: 10px;
-    }
-    .contenedor-menu{
-        width: 98%;
-        flex-direction: column;
-        align-items: start;
-    }
-    ul > li{
-        padding-right: 5px;
-    }
-    .contenedor-nav ul li{
-        font-size: 15px;
-    }
-    .contenedor-principal-header {
-        width: 100%;
-        justify-content: center;
-    }
-    .text-profesion, .texto-trabajos, .texto-personal, .texto-contactame, .descripcion, .texto{
-        font-size: 15px;
-    }
-    .Nombre{
-        display: none;
-    }
-    /* .contenedor-main{
-        margin-top: 10px;
-        padding-top: 10px;
-    } */
-    .contenedor-section{
-        height: 200px;
-        margin-bottom: 10px;
-    }
 
-    .texto-trabajos, .texto-personal, .texto-contactame{
-        padding-bottom: 10px;
+@media screen and (max-width: 700px){
+    .contenedor-primario-proyectos, .contenedor-secundario-proyectos{
+        flex-direction: column;
     }
-    .contenedor-trabajos, .contenedor-principal-tarjetas{
-        margin-bottom:  10px;
+    .proyecto-1, .proyecto-2, .proyecto-3, .proyecto-4 {
+        width: 100%;
     }
-    footer{
-        margin-top: 18px;
-        margin-bottom: 20px;
-    }
-    .iconos{
-        font-size: 25px;
-    }
-    
 }

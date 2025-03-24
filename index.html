@@ -3,91 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <link rel="preload" href="FORTA.woff2" as="font" type="font/woff2" crossorigin>
     <script src="https://kit.fontawesome.com/323576b8af.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
 </head>
 <body>
-    <header class="contenedor-principal-header">
-        <div class="contenedor-menu">
-            <p class="Nombre">Eric</p>
-            <nav class="contenedor-nav">
-                <ul>
-                    <li><a href="#trabajos">Trabajos</a></li>
-                    <li><a href="#info-personal">Sobre mi</a></li>
-                    <li><a href="#contacto">Contáctame</a></li>
-                </ul>
-            </nav>
+    <section class="contenedor-principal">
+        <!-- Primer sección -->
+        <div class="contenedor-presentacion">
+            <div class="contedor-texto">
+                <p class="texto">ERIC</p>
+                <p class="texto">JAIR</p>
+                <div class="contenedor-descripcion">
+                    <p class="separador">✦</p>
+                    <p class="descripcion">Frontend developer, convirtiendose poco a poco en fullstack</p>
+                </div>
+            </div>
+            <div class="contenedor-img">
+                <img class="img-zoro" src="./img/zoropng.png" alt="">
+            </div>
         </div>
-    </header>
-    <main class="contenedor-main">
-        <section class="contenedor-section">
-            <div class="contenedor-informacion">
-                <h2 class="text-profesion">Desarrollador FrontEnd</h2>
-                <h1 class="texto-nombre">Eric Jair Cruz Sánchez</h1>
-                <p class="descripcion">Mi meta es brindar soluciones novedosas a problemas específicos.</p>
-                <div class="contenedor-iconos">
-                    <a href="https://github.com/EricJairC" target="_blank" class="iconos"><i class="fa-brands fa-github"></i></a>   
-                    <a href="https://www.linkedin.com/in/eric-jair-cruz-sánchez-4b2401305/" target="_blank" class="iconos"><i class="fa-brands fa-linkedin"></i></a>
+        <!-- Segunda sección  -->
+        <div class="contenedor-proyectos">
+            <div class="contenedor-primer-seccion">
+                <div class="contenedor-titulo-proyectos">
+                    <p class="titulo">Mis</p>
+                    <p class="titulo">Proyectos</p>
+                </div>
+                <div class="contenedor-primario-proyectos">
+                    <div class="proyecto-1">
+                        <a href="" class="link-card">
+                            <img class="cards card-1" src="./img/peliculas-desktop.jpg" alt="">
+                        </a>
+                        <div class="contenedor-border-1"></div>
+                    </div>
+                    <div class="proyecto-2">
+                        <a href="" class="link-card">
+                            <img class="cards card-2" src="./img/control-gastos.jpg" alt="">
+                        </a>
+                        <div class="contenedor-border-2"></div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="contenedor-trabajos" id="trabajos">
-            <h2 class="texto-trabajos">Mis proyectos</h2>
-            <div class="contenedor-principal-tarjetas">
-                <article class="contenedor-tarjetas">
-                    <div class="imagen-tarjeta">
-                        <a class="link-proyecto" href="./categoria/categoria.html" target="_blank"><img src="./img/ProyectoTienda.png" alt="Proyecto Tienda"></a>
+            <div class="contenedor-segunda-seccion">
+                <div class="contenedor-secundario-proyectos">
+                    <div class="proyecto-3">
+                        <a href="" class="link-card">
+                            <img class="cards card-3" src="./img/tienda-UPIICSA.jpg" alt="">
+                        </a>
+                        <div class="contenedor-border-3"></div>
                     </div>
-                    <div class="contenedor-descripcion-proyecto">
-                        <h3 class="titulo-descripcion-proyecto">Tienda UPIIWEB</h3>
-                        <p class="descripcion-proyecto">Proyecto de tienda, en donde simulé la compra de productos, utilizando HTML5, CSS3+ y JavaScript.</p>
+                    <div class="proyecto-4">
+                        <a href="" class="link-card">
+                            <img class="cards card-4" src="./img/peliculas-desktop.jpg" alt="">
+                        </a>
+                        <div class="contenedor-border-4"></div>
                     </div>
-                </article>
-                <article class="contenedor-tarjetas">
-                    <div class="imagen-tarjeta">
-                        <a class="link-proyecto" href="./Peliculas/index.html" target="_blank"><img src="./img/ProyectoPeliculas.png" alt="Proyecto Reseñas"></a>
-                        
-                    </div>
-                    <div class="contenedor-descripcion-proyecto">
-                        <h3 class="titulo-descripcion-proyecto">Sinopsis de películas</h3>
-                        <p class="descripcion-proyecto">Proyecto realizado en curso de UDEMY, en donde aprendí a utilizar la API dbmovie.</p>
-                    </div>
-                </article>
-                <article class="contenedor-tarjetas">
-                    <div class="imagen-tarjeta">
-                        <a class="link-proyecto" href="./CodificadorVirologia/src/index.html" target="_blank"><img src="./img/AppGastos.png" alt="Proyecto Gastos"></a>
-                    </div>
-                    <div class="contenedor-descripcion-proyecto">
-                        <h3 class="titulo-descripcion-proyecto">Registro de gastos mensuales</h3>
-                        <p class="descripcion-proyecto">Aplicación donde aprendí a utilizar las cookies para poder llevar un registro de gastos mensuales.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <section class="contenedor-personal" id="info-personal">
-            <h2 class="texto-personal">Sobre mí</h2>
-            <div class="contenedor-informacion">
-                <article class="descripcion-personal">
-                    <p class="texto">Soy un estudiante de ingeniería en informática, que le apasiona el desarrollo web, así como brindar regularizaciones en materias como; algoritmos computacionales, lógica de programación, diseño web y base de datos.<br>Tengo experiencia con tecnologías como HTML5, CSS3+ y JavaScript. Actualmente me encuentro en un curso de React para seguir complementando mis habilidades como desarrollador frontend</p>
-                    <!-- <p class="texto">.</p> -->
-                </article>
-                <div class="contenedor-img">
-                    <img src="./img/perfil.png" alt="">
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="contenedor-contacto" id="contacto">
-            <h2 class="texto-contactame">Contacto</h2>
-            <div class="contenedor-iconos">
-                <div class="contenedor-iconos-footer">
-                    <a href="https://github.com/EricJairC" target="_blank" class="iconos"><i class="fa-brands fa-github"></i> <span class="texto"> /EricJairC</span></a>   
-                    <a href="https://www.linkedin.com/in/eric-jair-cruz-sánchez-4b2401305/" target="_blank" class="iconos"><i class="fa-brands fa-linkedin"></i> <span class="texto"> /eric-jair-cruz-sánchez-4b2401305/</span></a>
                 </div>
             </div>
         </div>
-    </footer>
+        <!-- Tercera sección  -->
+        <div class="contenedor-tecnologias">
+            <div class="contenedor-principal-tecnologias">
+                <div class="contenedor-titulo-teconologias">
+                    <p class="titulo-tecnologias">Tecnologías que uso</p>
+                </div>
+                <div class="contenedor-uso">
+                    <div class="contenedor-icono">
+                        <i class="icono fa-brands fa-html5"></i>
+                    </div>
+                    <div class="contenedor-icono">
+                        <i class="icono fa-brands fa-css3-alt"></i>
+                    </div>
+                    <div class="contenedor-icono">
+                        <i class="icono fa-brands fa-js"></i>
+                    </div>
+                    <div class="contenedor-icono">
+                        <i class="icono fa-brands fa-react"></i>
+                    </div>
+                    <div class="contenedor-icono">
+                        <i class="icono fa-brands fa-node-js"></i>
+                    </div>
+                    
+                    <div class="contenedor-icono">
+                        <i class="icono fa-solid fa-database"></i>
+                    </div>
+                    <div class="contenedor-icono">
+                        <i class="icono fi fi-brands-typescript"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
