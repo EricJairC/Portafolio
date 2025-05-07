@@ -38,7 +38,7 @@ body{
 
 .texto{
     color: var(--secondary);
-    font-size: clamp(8rem, 15vw, 15rem);
+    font-size: clamp(8rem, 10vw, 15rem);
     text-align: center;
 }
 
@@ -358,6 +358,21 @@ body{
 
 .class--active{
     display: block;
+}
+
+@media screen and (max-width: 1300px) and (max-height: 600px){
+    .contenedor-proyectos, .contenedor-primer-seccion{
+        height: auto;
+    }
+
+    .link-card{
+        height: 45%;
+        overflow: hidden;
+    }
+
+    .proyecto-primera, .proyecto-segunda{
+        height: 260px;
+    }
 }
 
 @media screen and (max-width: 1100px){
