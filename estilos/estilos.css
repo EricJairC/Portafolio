@@ -82,59 +82,89 @@ body{
     width: 100%;
     height: 100vh;
     display: flex;
+    justify-content: center;
     gap: 3rem;
     padding: 2rem;
 }
 
 .contenedor-primer-seccion{
-    width: 65%;
+    width: 80%;
+    min-width: 1000px;
+    max-width: 1300px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .contenedor-titulo-proyectos{
-    height: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .titulo{
     color: var(--secondary);
-    font-size: clamp(3rem, 10vw, 15rem);
+    font-size: clamp(3rem, 10vw, 5rem);
 }
 
 .contenedor-primario-proyectos{
     width: 100%;
-    height: 40%;
+    height: auto;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 3rem;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.proyecto-primera, .proyecto-segunda{
+    width: 100%;
+    height: 330px;
+    display: flex;
+    gap: 1rem;
 }
 
 .proyecto-1, .proyecto-2, .proyecto-3, .proyecto-4{
-    padding: 0.6rem;
+    width: 50%;
+    height: 100%;
+    padding: 0.4rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     background-color: var(--bg-img);
     border-radius: 0.5rem;
-    position: relative;
 }
 
-.proyecto-1, .proyecto-2{
-    width: 50%;
-    height: auto;
+.contenedor-descripcion-proyecto{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.proyecto-3, .proyecto-4{
-    width: 90%;
+.nombre-proyecto{
+    color: var(--secondary);
+    font-size: 1rem;
 }
 
-.proyecto-3{
-    margin-bottom: 2rem;
+.descripcion-proyecto,.tecnologias-nombre{
+    font-family: sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.descripcion-proyecto{
+    height: 60px;
+    color: var(--text);
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tecnologias-nombre{
+    color: var(--secondary);
 }
 
 .cards{
@@ -165,6 +195,7 @@ body{
 }
 
 .link-card{
+    height: 55%;
     overflow: hidden;
 }
 
@@ -173,7 +204,7 @@ body{
 }
 
 .link-card img:hover{
-    transform: scale(1.10);
+    transform: scale(1.05);
 }
 
 
@@ -228,6 +259,10 @@ body{
     color: var(--secondary);
 }
 
+.contenedor-icono{
+    opacity: 0;
+}
+
 .fi-brands-typescript {
     width: 40px;
     height: 40px;
@@ -236,9 +271,97 @@ body{
     align-items: center;
 }
 
+/* De arriba hacia abajo */
+.animate-slideDown {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideDown 1s forwards;
+}
+
+/* De abajo hacia arriba */
+.animate-slideUp {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 1s forwards;
+}
+
+/* Izquierda a derecha */
+.animate-leftToRight {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: leftToRight 1s forwards;
+}
+
+/* Derecha a izquierda */
+.animate-rightToLeft {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: rightToLeft 1s forwards;
+}
+
+/* Abajo hacia arriba */
+.animate-bottomToTop {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: bottomToTop 1s forwards;
+}
+
+/* Fade Up general */
+.animate-fadeUp {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s forwards;
+}
+
+/* Clases de animación de salida */ 
+.animate-slideDownOut {
+    animation: slideDownOut 0.8s forwards;
+}
+
+.animate-slideUpOut {
+    animation: slideUpOut 0.8s forwards;
+}
+
+.animate-fadeUpOut {
+    animation: fadeUpOut 0.8s forwards;
+}
+
+.animate-slideDown,
+.animate-slideUp,
+.animate-leftToRight,
+.animate-rightToLeft,
+.animate-bottomToTop,
+.animate-fadeUp {
+  transition: all 0.6s ease;
+  opacity: 1;
+}
+
+.texto,
+.separador,
+.descripcion,
+.img-zoro,
+.titulo,
+.proyecto-1,
+.proyecto-2,
+.proyecto-3,
+.proyecto-4,
+.titulo-tecnologias,
+.contenedor-icono {
+  opacity: 0;
+}
+
+.separador,
+.descripcion,
+.img-zoro{
+    display: none;
+}
+
+.class--active{
+    display: block;
+}
+
 @media screen and (max-width: 1100px){
     .contenedor-proyectos{
-        height: auto;
         flex-direction: column;
     }
     .contenedor-primer-seccion{
@@ -251,20 +374,97 @@ body{
     .contenedor-secundario-proyectos{
         flex-direction: row;
     }
-    .proyecto-3{
-        margin-bottom: 0;
-    }
     .contenedor-primer-seccion{
-        gap: 3rem;
+        min-width:fit-content;
     }
 }
 
+@media screen and (max-width: 877px){
+    .tecnologias-nombre{
+        height: 33px;
+    }
+}
 
 @media screen and (max-width: 700px){
-    .contenedor-primario-proyectos, .contenedor-secundario-proyectos{
+    .contenedor-proyectos, .contenedor-primer-seccion, .contenedor-primario-proyectos, .proyecto-primera, .proyecto-segunda{
+        height: auto;
+    }
+
+    .proyecto-primera, .proyecto-segunda{
         flex-direction: column;
     }
-    .proyecto-1, .proyecto-2, .proyecto-3, .proyecto-4 {
+
+    .proyecto-1, .proyecto-2, .proyecto-3, .proyecto-4{
         width: 100%;
     }
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes leftToRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes rightToLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes bottomToTop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDownOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes slideUpOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+@keyframes fadeUpOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(50px);
+  }
 }

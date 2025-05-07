@@ -1,5 +1,0 @@
-import './cargarCategoria'
-import './data/eventoCategorias'
-import './carrito'
-import './sliderMenu'
-import './desplazamientoVentanas'
